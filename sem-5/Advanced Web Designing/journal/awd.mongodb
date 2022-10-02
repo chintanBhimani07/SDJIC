@@ -1,0 +1,269 @@
+// Q1 -Create a database named with ‘mydb’, Create a collection named ‘employees’, Insert 15 documents in it. 
+use("mydb");
+db.createCollection("employees");
+db.employees.insert([
+    {
+        empno:2001,
+        name:[
+            {
+                firstname:"Chintan",
+                lastname:"Bhimani"
+            }
+        ],
+        emailID:"bhimanicaa@gmail.com",
+        contact:1234567890,
+        designtion:"Web Devloper",
+        birthday:new Date("2003-03-31"),
+        joiningdate:new Date("2020-01-01"),
+        salary:20000,
+        department:[
+            {
+                name:"IT",
+                discrition:"Information Technology"
+            }
+        ],
+        address:[{
+            city:"Ahmedabad",
+            state:"Gujarat",
+            landmark:"Vesu",
+            pincode:395001
+        }]
+    },
+    {
+        empno:2002,
+        name:[{
+            firstname:"Rahul",
+            lastname:"Makvana"
+        }],
+        emailID:"rahul111@gmail.com",
+        contact:6754534567,
+        designtion:"Police Officer",
+        birthday:new Date("1988-02-11"),
+        joiningdate:new Date("2000-11-27"),
+        salary:54000,
+        department:[{
+            name:"Police",
+            discrition:"Police Department"
+        }],
+        address:[{
+            city:"Surat",
+            state:"Gujarat",
+            landmark:"Adajan",
+            pincode:395011
+        }]
+    },
+    {
+        empno:2003,
+        name:{
+            firstname:"Nikunj",
+            lastname:"Ghori"
+        },
+        emailID:"nikunj32@gmail.com",
+        contact:9765694596,
+        designtion:"Assistant Professor",
+        birthday:new Date("1995-11-11"),
+        joiningdate:new Date("2015-06-01"),
+        salary:15000,
+        department:{
+            name:"School",
+            discrition:"School Department"
+        },
+        address:{
+            city:"Vadoadara",
+            state:"Gujarat",
+            landmark:"Adajan",
+            pincode:399101
+        }
+    },
+    {
+        empno:2004,
+        name:[{
+            firstname:"Minal",
+            lastname:"Ramani"
+        }],
+        emailID:"minal02@gmail.com",
+        contact:5676567545,
+        designtion:"Software Devloper",
+        birthday:new Date("1999-09-04"),
+        joiningdate:new Date("2019-01-01"),
+        salary:56999,
+        department:[{
+            name:"IT",
+            discrition:"IT Department"
+        }],
+        address:[{
+            city:"Mumbai",
+            state:"Maharashtra",
+            landmark:"Bandra",
+            pincode:4001069
+        }]
+    },
+    {
+        empno:2005,
+        name:[{
+            firstname:"Dhruvi",
+            lastname:"Patel"
+        }],
+        emailID:"dhruvi@gmail.com",
+        contact:234565437,
+        designtion:"Manager",
+        birthday:new Date("1976-05-06"),
+        joiningdate:new Date("2003-10-01"),
+        salary:91000,
+        department:[{
+            name:"AMT",
+            discrition:"Social Service"
+        }],
+        address:[{
+            city:"Junagadh",
+            landmark:"Gir",
+            pincode:564345
+        }]
+    },
+    {
+        empno:2006,
+        name:[{
+            firstname:"Kirti",
+            lastname:"Mital"
+        }],
+        emailID:"mitalisha000@gmail.com",
+        contact:098786745,
+        designtion:"Tester",
+        birthday:new Date("1988-02-11"),
+        joiningdate:new Date("2000-11-27"),
+        salary:24000,
+        department:[{
+            name:"Find Technology",
+            discrition:"Checking Software Depaetment"
+        }],
+        address:[{
+            city:"Dilhi",
+            state:"Uttar Pradesh",
+            landmark:"West Delhi",
+            pincode:888888
+        }]
+    },
+    {
+        empno:2007,
+        name:[{
+            firstname:"Chirag",
+            lastname:"Jasani"
+        }],
+        emailID:"chirag01@gmail.com",
+        contact:0005605656,
+        designtion:"Owner",
+        birthday:new Date("1992-12-17"),
+        joiningdate:new Date("2017-12-01"),
+        salary:null,
+        department:[{
+            name:"The Food Club",
+            discrition:"Hotel"
+        }],
+        address:[{
+            city:"Mumbai",
+            state:"Maharashtra",
+            landmark:"Juhu",
+            pincode:400376
+        }]
+    },
+    {
+        empno:2008,
+        name:[{
+            firstname:"Akshay",
+            lastname:"Kaneriya"
+        }],
+        emailID:"ak@gmail.com",
+        contact:978656789,
+        designtion:"Software Devloper",
+        birthday:new Date("2001-11-26"),
+        joiningdate:new Date("2020-03-01"),
+        salary:70000,
+        department:[{
+            name:"IT",
+            discrition:"IT Department"
+        }],
+        address:[{
+            city:"Surat",
+            state:"Gujarat",
+            landmark:"Vesu",
+            pincode:395001
+        }]
+    },
+    {
+        empno:2009,
+        name:[{
+            firstname:"Dhruvik",
+            lastname:"Vekariya"
+        }],
+        emailID:"dhukiii@gmail.com",
+        contact:123456543,
+        designtion:"IAS Officer",
+        birthday:new Date("2003-01-28"),
+        joiningdate:new Date("2022-01-01"),
+        salary:90000,
+        department:[{
+            name:"Police",
+            discrition:"Police Department"
+        }],
+        address:[{
+            city:"Mumbai",
+            state:"Maharashtra",
+            landmark:"Bandra",
+            pincode:401069
+        }]
+    },
+    {
+        empno:2010,
+        name:[{
+            firstname:"Darshan",
+            lastname:"Thummar"
+        }],
+        emailID:"darshan007@gmail.com",
+        contact:1230070076,
+        designtion:"Seles Manager",
+        birthday:new Date("2003-04-12"),
+        joiningdate:new Date("2022-09-01"),
+        salary:21000,
+        department:[{
+            name:"HTC Texttile",
+            discrition:"Texttile Department"
+        }],
+        address:[{
+            city:"Surat",
+            state:"Gujarat",
+            landmark:"Varachha",
+            pincode:395006
+        }]
+    }
+]);
+
+
+// Q2 - Write a MongoDB query to displays all documents from the employees collection. 
+db.employees.find();
+
+// Q3 - Write a MongoDB query to displays name, joining date and salary of all documents from the employees collection
+db.employees.find({},{_id:0,name:1,joiningdate:1,salary:1});
+
+
+// Q4 - Write a MongoDB query to displays first name, last name and email id of all documents from the employees collection whose salary is more than 20000
+db.employees.find({"salary":{$gt:20000}},{"_id":0,"name":1,"emailID":1});
+
+// Q5 - Write a MongoDB query to displays first name, last name, email id and contact number of all documents from the employees collection whose salary is 20000 and working as an ‘Web Developer’.
+db.employees.find({$and:[{"salary":{$eq:20000}},{"designtion":{$eq:"Web Devloper"}}]},{"_id":0,"name":1,"emailID":1,"contact":1}).pretty();
+
+// Q6
+db.employees.find({"name.firstname":/^K/},{"_id":0,"name.firstname":1}).pretty();
+
+
+// Q7
+db.employees.find().sort({birthday:1});
+
+
+// Q8
+db.employees.find().sort({"salary":-1}).limit(5);
+
+// Q9
+db.employees.deleteMany({"address.pincode":395001});
+
+// Q10
+db.employees.find({"birthday":{$lte:ISODate("1990-12-31")}},{"birthday":1});

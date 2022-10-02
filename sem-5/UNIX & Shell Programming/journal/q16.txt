@@ -1,0 +1,20 @@
+grep -c "^$" f1.txt
+
+grep "SDJIC" f1.txt
+
+grep "^SDJIC" f1.txt
+
+grep 'include' *.c
+
+grep -c -E "^.{50}$" f1.txt
+
+grep -c -E "^.{1}$" f1.txt
+
+grep -i "sdjic" f1.txt
+
+
+grep -c -E "^.{3}$" f1.txt
+
+grep "^[A-Za-z]" f1.txt
+
+
